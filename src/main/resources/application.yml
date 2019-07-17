@@ -33,4 +33,5 @@ eureka:
   server:
     waitTimeInMsWhenSyncEmpty: 5
   serviceUrl:
-    defaultZone: http://localhost:8080
+    # defaultZone: http://localhost:8080
+    defaultZone: http://dev.avocadostudio.xyz:12002
