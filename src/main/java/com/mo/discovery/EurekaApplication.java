@@ -18,10 +18,14 @@ public class EurekaApplication extends SpringBootServletInitializer {
     @Value("${server.port}")
     String port;
 
+    @Value("${eureka.instance.hostname}")
+    String discovery;
+
     @PostConstruct
     public void init() {
         System.out.println("profiles : " + profiles);
         System.out.println("port : " + port);
+        System.out.println("discovery : " + discovery);
     }
 
     public static void main(String[] args) {
