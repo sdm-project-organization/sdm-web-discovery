@@ -3,11 +3,11 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.thoughtmechanix</groupId>
-    <artifactId>eurekasvr</artifactId>
+    <groupId>com.mo</groupId>
+    <artifactId>discovery</artifactId>
+    <name>discovery</name>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>war</packaging>
-    <name>Eureka Server</name>
     <description>Eureka Server demo project</description>
 
     <parent>
@@ -41,7 +41,7 @@
     <!--Docker build Config-->
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <start-class>com.thoughtmechanix.eurekasvr.EurekaServerApplication</start-class>
+        <start-class>com.mo.discovery.EurekaApplication</start-class>
         <java.version>1.8</java.version>
         <docker.image.name>johncarnell/tmx-eurekasvr</docker.image.name>
         <docker.image.tag>chapter4</docker.image.tag>

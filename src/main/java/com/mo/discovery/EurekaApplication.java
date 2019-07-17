@@ -1,4 +1,4 @@
-package com.thoughtmechanix.eurekasvr;
+package com.mo.discovery;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.SpringApplication;
@@ -10,7 +10,7 @@ import javax.annotation.PostConstruct;
 
 @SpringBootApplication
 @EnableEurekaServer
-public class EurekaServerApplication extends SpringBootServletInitializer {
+public class EurekaApplication extends SpringBootServletInitializer {
 
     @Value("${spring.profiles}")
     String profiles;
@@ -25,6 +25,6 @@ public class EurekaServerApplication extends SpringBootServletInitializer {
     }
 
     public static void main(String[] args) {
-        SpringApplication.run(EurekaServerApplication.class, args);
+        SpringApplication.run(EurekaApplication.class, args);
     }
 }
