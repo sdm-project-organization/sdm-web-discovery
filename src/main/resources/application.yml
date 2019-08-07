@@ -1,11 +1,11 @@
 
+server:
+  port: 8761
+
 ##### DEFAULT #####
 
 spring:
   profiles: default
-
-server:
-  port: 8761
 
 eureka:
   instance:
@@ -24,9 +24,6 @@ eureka:
 
 spring:
   profiles: dev
-
-server:
-  port: 8761
 
 eureka:
   instance:
